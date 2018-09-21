@@ -37,12 +37,12 @@ var questions = [{
   {
     q: "“Michael Keaton played which Spiderman villain in the 2017 superhero movie “Spiderman: Homecoming”?”",
     a: ["Rhino", "Dr.Octavious", "Vulture", "Green Goblin"],
-    correct_a: "2"
+    correct_a: "Vulture"
   },
   {
     q: "How many teams are in the American National Football league?",
     a: ["16", "24", "20", "32"],
-    correct_a: "2"
+    correct_a: "32"
   },
   {
     q: "Professional footballer Lionel Messi was born in which country?",
@@ -56,5 +56,19 @@ var questions = [{
 var correct = 0;
 var incorrect = 0;
 var time = 15; 
+var question_number = 0;
 var questions_missed = 0;
+var gameRunning = false; 
 
+
+// New Game function
+function newGame () {
+
+}
+
+
+//timer for questions
+function timer() {
+  time--; 
+  $("#time-left").html("00:" + time + " secs");
+}
